@@ -1,0 +1,5 @@
+docker:
+    site: sitefgp_cli
+    volume: sitefgp_web
+    network: sitefgp_default
+    behat_path: profiles/wxt/tests
