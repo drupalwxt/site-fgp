@@ -8109,12 +8109,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/fgp.git",
-                "reference": "c8b621b9911d51a65c824be26ad83678c6fe6cf4"
+                "reference": "a972e3ac318da5fba7f7700b710a35a3118c290a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/fgp/zipball/c8b621b9911d51a65c824be26ad83678c6fe6cf4",
-                "reference": "c8b621b9911d51a65c824be26ad83678c6fe6cf4",
+                "url": "https://api.github.com/repos/drupalwxt/fgp/zipball/a972e3ac318da5fba7f7700b710a35a3118c290a",
+                "reference": "a972e3ac318da5fba7f7700b710a35a3118c290a",
                 "shasum": ""
             },
             "require": {
@@ -8196,7 +8196,7 @@
                 "GPL-2.0+"
             ],
             "description": "Installation profile (FGP) for Drupal 8 sites built with the WxT distribution.",
-            "time": "2018-11-25T21:33:36+00:00"
+            "time": "2018-11-26 00:44:57"
         },
         {
             "name": "drupalwxt/wxt",

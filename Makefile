@@ -31,10 +31,10 @@ base:
                --build-arg HTTPS_PROXY=$$HTTP_PROXY .
 
 drupal_install:
-	docker exec sitefgp_cli bash /var/www/docker/bin/cli drupal-first-run wxt
+	docker exec sitefgp_cli bash /var/www/docker/bin/cli drupal-first-run fgp
 
 drupal_migrate:
-	docker exec sitefgp_cli bash /var/www/docker/bin/cli drupal-migrate wxt
+	docker exec sitefgp_cli bash /var/www/docker/bin/cli drupal-migrate fgp
 
 drush_archive:
 	./docker/bin/drush archive-dump --destination="/var/www/files_private/drupal$$(date +%Y%m%d_%H%M%S).tgz" \
