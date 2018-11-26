@@ -3331,6 +3331,79 @@
             }
         },
         {
+            "name": "drupal/drush_language",
+            "version": "1.0.0-rc1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/drush_language",
+                "reference": "8.x-1.0-rc1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/drush_language-8.x-1.0-rc1.zip",
+                "reference": "8.x-1.0-rc1",
+                "shasum": "1ec594ac4da4012f74adf5569a44da148fd74218"
+            },
+            "require": {
+                "drupal/core": "*",
+                "webmozart/path-util": "^2.1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-rc1",
+                    "datestamp": "1523365384",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "axel.rutz",
+                    "homepage": "https://www.drupal.org/user/229048"
+                },
+                {
+                    "name": "dawehner",
+                    "homepage": "https://www.drupal.org/user/99340"
+                },
+                {
+                    "name": "gurvan",
+                    "homepage": "https://www.drupal.org/user/852194"
+                },
+                {
+                    "name": "ndf",
+                    "homepage": "https://www.drupal.org/user/599438"
+                },
+                {
+                    "name": "the greenman",
+                    "homepage": "https://www.drupal.org/user/19836"
+                },
+                {
+                    "name": "xatoo",
+                    "homepage": "https://www.drupal.org/user/103227"
+                }
+            ],
+            "description": "Provides Drush commands for language manipulation",
+            "homepage": "https://www.drupal.org/project/drush_language",
+            "support": {
+                "source": "http://cgit.drupalcode.org/drush_language"
+            }
+        },
+        {
             "name": "drupal/embed",
             "version": "1.0.0",
             "source": {
@@ -8109,20 +8182,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/fgp.git",
-                "reference": "a972e3ac318da5fba7f7700b710a35a3118c290a"
+                "reference": "430a397d6f8b1865408158925b0a26a89aacd55c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/fgp/zipball/a972e3ac318da5fba7f7700b710a35a3118c290a",
-                "reference": "a972e3ac318da5fba7f7700b710a35a3118c290a",
+                "url": "https://api.github.com/repos/drupalwxt/fgp/zipball/430a397d6f8b1865408158925b0a26a89aacd55c",
+                "reference": "430a397d6f8b1865408158925b0a26a89aacd55c",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "^1.2",
-                "cweagans/composer-patches": "^1.6.0",
+                "cweagans/composer-patches": "^1.6.4",
                 "drupal-composer/drupal-scaffold": "^2.0.0",
+                "drupal/drush_language": "1.0-rc1",
                 "drupalwxt/wxt": "2.2.1",
-                "harvesthq/chosen": "1.6.1"
+                "harvesthq/chosen": "^1.8"
             },
             "require-dev": {
                 "behat/behat": "^3.0",
@@ -8180,11 +8254,7 @@
                     ]
                 },
                 "enable-patching": true,
-                "patches": {
-                    "drupal/chosen": {
-                        "Enter drupal/chosen patch #2706433 description here": "https://www.drupal.org/files/issues/composer_dist_problem-2706433-28.patch"
-                    }
-                }
+                "patches": []
             },
             "autoload": {
                 "psr-4": {
@@ -8196,7 +8266,7 @@
                 "GPL-2.0+"
             ],
             "description": "Installation profile (FGP) for Drupal 8 sites built with the WxT distribution.",
-            "time": "2018-11-26 00:44:57"
+            "time": "2018-11-26 03:44:34"
         },
         {
             "name": "drupalwxt/wxt",
@@ -9027,19 +9097,52 @@
         },
         {
             "name": "harvesthq/chosen",
-            "version": "v1.6.1",
+            "version": "v1.8.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/harvesthq/chosen-package.git",
-                "reference": "v1.6.1"
+                "reference": "ad86732b668627c131e61ee8f0e6e9ed52e4db8d"
             },
             "dist": {
-                "type": "tar",
-                "url": "https://github.com/harvesthq/chosen-package/archive/v1.6.1.tar.gz",
-                "reference": "v1.6.1",
-                "shasum": null
+                "type": "zip",
+                "url": "https://api.github.com/repos/harvesthq/chosen-package/zipball/ad86732b668627c131e61ee8f0e6e9ed52e4db8d",
+                "reference": "ad86732b668627c131e61ee8f0e6e9ed52e4db8d",
+                "shasum": ""
             },
-            "type": "drupal-library"
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Koen Punt",
+                    "homepage": "https://github.com/koenpunt"
+                },
+                {
+                    "name": "Patrick Filler",
+                    "homepage": "https://github.com/pfiller"
+                },
+                {
+                    "name": "Christophe Coevoet",
+                    "homepage": "https://github.com/stof"
+                },
+                {
+                    "name": "Ken Earley",
+                    "homepage": "https://github.com/kenearley"
+                }
+            ],
+            "description": "Chosen is a JavaScript plugin that makes select boxes user-friendly. It is currently available in both jQuery and Prototype flavors.",
+            "homepage": "https://harvesthq.github.io/chosen/",
+            "keywords": [
+                "dropdown",
+                "form",
+                "input",
+                "multiselect",
+                "select",
+                "ui"
+            ],
+            "time": "2018-06-28T20:32:51+00:00"
         },
         {
             "name": "j7mbo/twitter-api-php",
@@ -13072,6 +13175,9 @@
             "extra": {
                 "branch-alias": {
                     "dev-master": "3.0-dev"
+                },
+                "patches_applied": {
+                    "Enter deployer/recipes patch #80 description here": "https://patch-diff.githubusercontent.com/raw/deployphp/recipes/pull/80.patch"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",

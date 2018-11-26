@@ -153,7 +153,7 @@ from the project into the `docker` + `docker/images/<release>` folder(s) and is
 the primary configuration for the majority of the containers. The image below
 gives a rough overview:
 
-![drupal-scaffold-docker](docs/docker.png "drupal-scaffold-docker")
+![drupal-scaffold-docker](docker.png "drupal-scaffold-docker")
 
 ### Drupal Scaffold Docker (Composer Plugin)
 
@@ -412,7 +412,7 @@ The specific default templates for both Gitlab CI / Travis CI can be found here:
 
 Below is a `graphviz` dot representation of our `docker-compose.yml` file.
 
-![Infrastructure](docs/infra.png "Docker Infrastructure")
+![Infrastructure](infra.png "Docker Infrastructure")
 
 ## Acknowledgements
 

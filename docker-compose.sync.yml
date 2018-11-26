@@ -18,7 +18,7 @@ services:
       - HTTP_PROXY=${HTTP_PROXY}
       - HTTPS_PROXY=${HTTP_PROXY}
     volumes:
-      - ./:/var/www
+      - root-sync:/var/www:nocopy
     depends_on:
       - db
     ports:
@@ -40,7 +40,7 @@ services:
   nginx:
     image: nginx:alpine
     volumes:
-     - ./html:/var/www/html
+     - docroot-sync:/var/www/html:nocopy
      - ./docker/conf/nginx.conf:/etc/nginx/nginx.conf:ro
     ports:
       - '80:80'
@@ -64,7 +64,7 @@ services:
       - HTTP_PROXY=${HTTP_PROXY}
       - HTTPS_PROXY=${HTTP_PROXY}
     volumes:
-      - ./:/var/www
+      - root-sync:/var/www:nocopy
     depends_on:
      - db
      - web
@@ -119,4 +119,8 @@ services:
 #    container_name: sitefgp_solr
 
 volumes:
+  root-sync:
+    external: true
+  docroot-sync:
+    external: true
   db_data:

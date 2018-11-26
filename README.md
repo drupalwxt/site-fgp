@@ -1,28 +1,14 @@
-Composer Project template for Drupal
-====================================
+Composer Project template for Drupal FGP
+========================================
 
 [![Build Status][ci-badge]][ci]
 
-Drupal WxT codebase for `<site-fgp>`.
+Drupal 8 FGP codebase for `site-fgp`.
 
 ## Requirements
 
 * [Composer][composer]
 * [Node][node]
-
-## New Project
-
-```sh
-composer create-project drupalwxt/wxt-project:8.x-dev site-fgp
-```
-
-## Docker support via `drupal-scaffold-docker`
-
-This project makes use of the `drupal-scaffold-docker` plugin for automatically
-downloading and instantiating a Docker based Drupal infrastructure.
-
-- [README.md][docker-scaffold-readme]
-- [template/docker/README.md][docker-readme]
 
 ## Maintenance
 
@@ -30,10 +16,10 @@ List of common commands are as follows:
 
 | Task                                            | Composer                                               |
 |-------------------------------------------------|--------------------------------------------------------|
-| Latest version of a contributed project         | ```composer require drupal/fgp:8.*```         |
-| Specific version of a contributed project       | ```composer require drupal/fgp:8.1.0-beta5``` |
+| Latest version of a contributed project         | ```composer require drupal/fgp:2.2.*```                |
+| Specific version of a contributed project       | ```composer require drupal/fgp:2.2.1```                |
 | Updating all projects including Drupal Core     | ```composer update```                                  |
-| Updating a single contributed project           | ```composer update drupal/fgp```              |
+| Updating a single contributed project           | ```composer update drupal/fgp```                       |
 | Updating Drupal Core exclusively                | ```composer update drupal/core```                      |
 
 
